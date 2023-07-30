@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eeedf3;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* designing navigation bar */
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 3px;
+}
+
+.devName {
+    font-size: 25px;
+    margin-left: 10%;
+    letter-spacing: 3px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+.nav-li {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navLines {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+/* designing main section */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 150px; */
+    margin-top: 50px;
+}
+
+#left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+#left-description {
+    font-weight: 500;
+}
+
+/* designing texts of main section */
+.left-devname {
+    /* color: #5b52a1; */
+    color: #5549b5;
+    /* color: #4c3bd3; */
+    font-size: 40px;
+}
+
+.left-devDes {
+    color: #4c3bd3;
+    font-size: 20px;
+}
+
+/* avtar section */
+#avtar-img {
+    margin-left: 200px;
+}
+
+img[alt="Avtar"] {
+    height: 450px;
+    width: 450px;
+}
+
+/* desgining projects section */
+#project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#project-heading-section h2 {
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+#project-list-section {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    row-gap: 20px;
+    column-gap: 150px;
+    position: relative;
+    left: -2%;
+}
+
+#project-list-section div {
+    margin-top: 30px;
+    height: 100px;
+    width: 220px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #ffffff; */
+}
+
+#project-list-section div a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+img[alt="img"] {
+    background-color: transparent;
+}
+
+/* designing message section */
+#message-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#msg-head {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#msg-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+#msg-input {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #4c3bd3;
+    border-radius: 15px;
+    outline: none;
+}
+
+#msg-btn {
+    font-size: 16px;
+    padding: 10px 25px;
+    background-color: #8f83e8;
+    color: #ffffff;
+    border: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+/* designing footer section */
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: transparent;
+}
+
+.footer-li {
+    background-color: transparent;
+    list-style: none;
+}
+
+.footer-icon a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.footer-icon a i {
+    background-color: transparent;
+}
+
+/* designing seclected text */
+::selection {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer p::selection {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.left-devname::selection {
+    background-color: #5549b5;
+    color: #ffffff;
+}
+
+.left-devDes::selection {
+    background-color: #4c3bd3;
+    color: #ffffff;
+}
+
+
+#msg-input::selection {
+    background-color: #4c3bd3;
+    color: #ffffff;
+}
+
+/* designing hover */
+li:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+#project-list-section div:hover {
+    border: 3px solid #4c3bd3;
+    background-color: #ffffff;
+}
+
+#msg-btn:hover {
+    background-color: transparent;
+    border: 2px solid #4c3bd3;
+    color: #4c3bd3;
+}
+
+footer ul li i:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 12px #00000029;
+}
